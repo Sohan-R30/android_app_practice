@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PayOutActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/backBtnPayout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Edit"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtnPayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeon_sung"
+            android:paddingLeft="8dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeon_sung"
+            android:paddingLeft="8dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Lorem ipsum is placeholder text  commonly used in the graphic,  print, and publishing industries  for previewing layouts and visual "
+            android:inputType="textMultiLine"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/edit_text_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingLeft="8dp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="0123456789"
+        android:inputType="phone" />
+</LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/edit_text_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingLeft="8dp"
+        android:text="Payment Method"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/paymentMethod"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/cashondelivery" />
+</LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edit_text_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingLeft="8dp"
+        android:text="Total Amount"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/totalAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/yeon_sung"
+        android:gravity="end"
+        android:inputType="none"
+        android:paddingEnd="32dp"
+        android:text="$5"
+        android:textColor="@color/textColor" />
+</LinearLayout>
+</LinearLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/placeMyOrder"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="32dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/proceed_btn_shape"
+    android:text="Place My Order"
+    android:textAllCaps="false"
+    android:textColor="@color/textColor"
+    android:fontFamily="@font/yeon_sung"/>
+</FrameLayout>
